@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<link rel="stylesheet" href="CSS/styles.css">
+	<link rel="stylesheet" href="CSS/fonts.css">
+	<link rel="icon" type="image/x-icon" href="IMG/icon.png">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.min.js"></script>
+	<script src="JS/script.js"></script>
+	<title>windbnb</title>
+</head>
+<body>
+	<nav>
+		<div class="brand-nav">
+			<div class="brand-img">
+				<img src="IMG/logo.png" alt="windbnb">
+			</div>
+			<div>
+				<h1>windbnb</h1>
+			</div>
+		</div>
+		<div class="search-nav">
+			<div class="nav-destiny">
+				<p>Helsinki, Finland</p>
+			</div>
+			<div class="nav-guests">
+				<input type="search" placeholder="Add guests">
+			</div>
+			<div class="nav-glass">
+				<img src="IMG/magnifyingglass.svg" alt="magnifyingglass">
+			</div>
+		</div>
+	</nav>
+	<div class="layout">
+		<div class="bar">	
+			<div class="nav-destiny-layout">
+				<div>
+					<h3>LOCATION</h3>
+				</div>
+				<div>
+					<p>Helsinki, Finland</p>
+				</div>
+				<div class="layout-location">
+					<div class="location-name">
+						<div class="spot">
+							<img src="IMG/location.svg" alt="">
+						</div>
+						<div>
+							<h5>Helsinki, Finland</h5>
+						</div>
+					</div>
+					<div class="location-name">
+						<div class="spot">
+							<img src="IMG/location.svg" alt="">
+						</div>
+						<div>
+							<h5>Turku, Finland</h5>
+						</div>
+					</div>
+					<div class="location-name">
+						<div class="spot">
+							<img src="IMG/location.svg" alt="">
+						</div>
+						<div>
+							<h5>Oulu, Finland</h5>
+						</div>
+					</div>
+					<div class="location-name">
+						<div class="spot">
+							<img src="IMG/location.svg" alt="">
+						</div>
+						<div>
+							<h5>Vaasa, Finland</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav-guests-layout">
+				<div>
+					<h3>GUESTS</h3>
+				</div>
+				<div>
+					<p>Add guests</p>
+				</div>
+			</div>
+			<div class="layout-guests">
+				<div class="how-many-people">
+					<h3>Children</h3>
+					<p>Ages 2-12</p>
+				</div>
+				<div class="choose-how-many">
+					<button id="sumar">+</button>
+					<span id="contador">0</span>
+					<button id="restar">-</button>
+					<script>
+						const botonSumar = document.getElementById('sumar');
+						const botonRestar = document.getElementById('restar');
+						const contador = document.getElementById('contador');
+						let valorContador = 0;
+						botonSumar.addEventListener('click', function() {
+							valorContador++;
+							contador.innerText = valorContador;
+						});
+						botonRestar.addEventListener('click', function() {
+							if (valorContador > 0) {
+								valorContador--;
+								contador.innerText = valorContador;
+							}
+						});
+					</script>
+				</div>
+				<div class="how-many-people">
+					<h3>Adults</h3>
+					<p>Ages 13 or above</p>
+				</div>
+				<div class="choose-how-many">
+					<button id="sumar1">+</button>
+					<span id="contador1">0</span>
+					<button id="restar1">-</button>
+					<script>
+						const botonSumar1 = document.getElementById('sumar1');
+						const botonRestar1 = document.getElementById('restar1');
+						const contador1 = document.getElementById('contador1');
+						let valorContador1 = 0;
+						botonSumar1.addEventListener('click', function() {
+							valorContador1++;
+							contador1.innerText = valorContador1;
+						});
+						botonRestar1.addEventListener('click', function() {
+							if (valorContador1 > 0) {
+								valorContador1--;
+								contador1.innerText = valorContador1;
+							}
+						});
+					</script>
+				</div>
+			</div>
+			<div class="nav-glass-layout">
+				<div class="glass-nav">
+					<div class="nav-glass-layout-img">
+						<img src="IMG/magnifyingglass2.svg" alt="magnifyingglass">
+					</div>
+					<div class="search-glass">
+						<p>Search</p>
+					</div>
+				</div>
+			</div>
+			<div class="cancel">
+				<img src="IMG/cancel.svg" alt="">
+			</div>
+		</div>
+	</div>
+	<header>
+		<div>
+			<h2>Stays in Finland</h2>
+		</div>
+		<div>
+			<h3>12+ stays</h3>
+		</div>
+	</header>
+	<main>
+		<div class="row-main">
+			<div class="windbnb-0">
+				<div class="apartment-img">
+					<img src="IMG/photo-1.png" alt="apartment">
+				</div>
+				<div class="apartment-description">
+					<div class="superhost">
+						<p>SUPER HOST</p>
+					</div>
+					<div class="specifications">
+						<p>Entire apartment . 2 beds</p>
+					</div>
+					<div class="validation">
+						<div class="star-img">
+							<img src="IMG/star.svg" alt="star">
+						</div>
+						<div>
+							<p>4.40</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-apartment">
+					<p>Stylist apartment in center of the city</p>
+				</div>
+			</div>
+			<div class="windbnb-0">
+				<div class="apartment-img">
+					<img src="IMG/photo-2.png" alt="apartment">
+				</div>
+				<div class="apartment-description">
+					<div class="specifications">
+						<p>Private room</p>
+					</div>
+					<div class="validation">
+						<div class="star-img">
+							<img src="IMG/star.svg" alt="star">
+						</div>
+						<div>
+							<p>4.25</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-apartment">
+					<p>Cozy, peaceful and private room with...</p>
+				</div>
+			</div>
+			<div class="windbnb-0">
+				<div class="apartment-img">
+					<img src="IMG/photo-3.png" alt="apartment">
+				</div>
+				<div class="apartment-description">
+					<div class="specifications">
+						<p>Entire house</p>
+					</div>
+					<div class="validation">
+						<div class="star-img">
+							<img src="IMG/star.svg" alt="star">
+						</div>
+						<div>
+							<p>4.96</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-apartment">
+					<p>Mordern House in a remote area</p>
+				</div>
+			</div>
+			<div class="windbnb-0">
+				<div class="apartment-img">
+					<img src="IMG/photo-7.png" alt="apartment">
+				</div>
+				<div class="apartment-description">
+					<div class="specifications">
+						<p>Entire house</p>
+					</div>
+					<div class="validation">
+						<div class="star-img">
+							<img src="IMG/star.svg" alt="star">
+						</div>
+						<div>
+							<p>4.96</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-apartment">
+					<p>Mordern House in a remote area</p>
+				</div>
+			</div>
+			<div class="windbnb-0">
+				<div class="apartment-img">
+					<img src="IMG/photo-8.png" alt="apartment">
+				</div>
+				<div class="apartment-description">
+					<div class="specifications">
+						<p>Entire house</p>
+					</div>
+					<div class="validation">
+						<div class="star-img">
+							<img src="IMG/star.svg" alt="star">
+						</div>
+						<div>
+							<p>4.96</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-apartment">
+					<p>Mordern House in a remote area</p>
+				</div>
+			</div>
+			<div class="windbnb-0">
+				<div class="apartment-img">
+					<img src="IMG/photo-9.png" alt="apartment">
+				</div>
+				<div class="apartment-description">
+					<div class="specifications">
+						<p>Entire house</p>
+					</div>
+					<div class="validation">
+						<div class="star-img">
+							<img src="IMG/star.svg" alt="star">
+						</div>
+						<div>
+							<p>4.96</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-apartment">
+					<p>Mordern House in a remote area</p>
+				</div>
+			</div>
+		</div>
+		<div class="row-main">
+			<div class="windbnb-0">
+				<div class="apartment-img">
+					<img src="IMG/photo-4.png" alt="apartment">
+				</div>
+				<div class="apartment-description">
+					<div class="superhost">
+						<p>SUPER HOST</p>
+					</div>
+					<div class="specifications">
+						<p>Entire apartment . 2 beds</p>
+					</div>
+					<div class="validation">
+						<div class="star-img">
+							<img src="IMG/star.svg" alt="star">
+						</div>
+						<div>
+							<p>4.85</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-apartment">
+					<p>Stylist room in design district</p>
+				</div>
+			</div>
+			<div class="windbnb-0">
+				<div class="apartment-img">
+					<img src="IMG/photo-5.png" alt="apartment">
+				</div>
+				<div class="apartment-description">
+					<div class="specifications">
+						<p>Private room</p>
+					</div>
+					<div class="validation">
+						<div class="star-img">
+							<img src="IMG/star.svg" alt="star">
+						</div>
+						<div>
+							<p>4.54</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-apartment">
+					<p>Modern apartment close to nature</p>
+				</div>
+			</div>
+			<div class="windbnb-0">
+				<div class="apartment-img">
+					<img src="IMG/photo-6.png" alt="apartment">
+				</div>
+				<div class="apartment-description">
+					<div class="specifications">
+						<p>Entire house</p>
+					</div>
+					<div class="validation">
+						<div class="star-img">
+							<img src="IMG/star.svg" alt="star">
+						</div>
+						<div>
+							<p>4.64</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-apartment">
+					<p>House in a remote area</p>
+				</div>
+			</div>
+		</div>
+	</main>	
+</body>
+</html>
+

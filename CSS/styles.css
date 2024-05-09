@@ -1,0 +1,501 @@
+nav, header, main{
+	width: 95%;
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+
+nav{
+	margin-top: 15px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	flex: 1 1 auto;
+	align-items: center;
+}
+
+nav.open{
+	visibility: hidden;
+}
+
+header.open{
+	visibility: hidden;
+}
+
+body.open{
+	background: rgba(79, 79, 79, 0.4);
+}
+
+header{
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1 1 auto;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header h2{
+	font-size: 25px;
+	color: rgba(51, 51, 51, 1);
+}
+
+header h3{
+	font-size: 15px;
+	color: rgba(79, 79, 79, 1);
+}
+
+main{
+	display: flex;
+	flex-flow: column wrap;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.brand-nav{
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1 1 auto;
+	align-items: center;
+	color: rgba(235, 87, 87, 1);
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	gap: 5px;
+}
+
+.search-nav{
+	width: 100%;
+	max-width: 298px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	flex: 1 1 auto;
+	align-items: center;
+	font-family: 'Mulish', sans-serif;
+}
+
+.nav-glass{
+	width: 100%;
+	background: white;
+	border: 1px solid rgba(242, 242, 242, 1);
+	padding: 5.2px 10px;
+	max-width: 27px;
+	border-radius: 0px 16px 16px 0px;
+	box-shadow: 0px -1.5px 1px 0px rgba(0,0,0,0.1), 1.5px 0px 1px 0px rgba(0,0,0,.1), 0px 1.5px 1px 0px rgba(0,0,0,0.1);
+}
+
+.nav-destiny p{
+	all: unset;
+	padding: 10px 10px;
+	background: white;
+	color: rgba(51, 51, 51, 1);
+	border: 1px solid rgba(242, 242, 242, 1);
+	font-size: 15px;
+	cursor: pointer;
+	border-radius: 16px 0px 0px 16px;
+	box-shadow: -1.5px 0px 1px 0px rgba(0,0,0,0.1), 0px -1.5px 1px 0px rgba(0,0,0,0.1), 0px 1.5px 1px 0px rgba(0,0,0,0.1);
+}
+
+.nav-guests input{
+	all: unset;
+	padding: 10px 10px;
+	background: white;
+	color: rgba(189, 189, 189, 1);
+	border: 1px solid rgba(242, 242, 242, 1);
+	font-size: 15px;
+	width: 100%;
+	max-width: 92.5px;
+	cursor: pointer;
+	box-shadow: 0px -1.5px 1px 0px rgba(0,0,0,0.1), 0px 1.5px 1px 0px rgba(0,0,0,0.1);
+}
+
+.layout{
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	height: 50%;
+	background: white;
+}
+
+.layout.open{
+	visibility: visible;
+	opacity: 1;
+}
+
+.bar{	
+	display: flex;
+	flex-flow: row wrap;
+	width: 98%;
+	max-width: 1020px;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	transform: translateX(100px) translateY(-100px);
+	transition: .4s;
+}
+
+.bar.open{
+	transform: translateX(00px) translateY(-100px);
+}
+
+.layout-location{
+	position: absolute;
+	transform: translateY(30px);
+	width: 98%;
+	max-width: 410px;
+	height: 200px;
+	cursor: auto;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.layout-location.open{
+	visibility: visible;
+	opacity: 1;
+}
+
+.layout-guests{
+	display: flex;
+	flex-flow: column wrap;
+	position: absolute;
+	transform: translateX(130px) translateY(148.9px);
+	width: 98%;
+	max-width: 410px;
+	height: 200px;
+	gap: 15px;
+	cursor: auto;
+	visibility:hidden;
+	opacity: 0;
+}
+
+.layout-guests.open{
+	visibility: visible;
+	opacity: 1;
+}
+
+.how-many-people{
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.how-many-people h2, p{
+	all: unset;
+	margin: 5px 0px 10px 0px;
+	font-family: 'Mulish', sans-serif;
+}
+
+.how-many-people p{
+	color: rgba(189, 189, 189, 1);
+	font-size: 12px;
+}
+
+.choose-how-many{
+	align-items: center;
+	gap: 10px;
+	display: flex;
+	flex-flow: row wrap;
+	margin: -10px 0px 15px 0px;
+}
+
+.choose-how-many button{
+	border-radius: 4px;
+	border: 1px solid rgba(130, 130, 130, 1);
+	background: transparent;
+	color: rgba(130, 130, 130, 1);
+}
+
+.location-name{
+	margin-bottom: 10px;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.location-name h5{
+	all: unset;
+	font-size: 14px;
+	color: rgba(79, 79, 79, 1);
+}
+
+.bar h3{
+	all: unset;
+	color: rgba(51, 51, 51, 1);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.nav-destiny-layout{
+	background: white;
+	padding: 7.5px 10.5px;
+	cursor: pointer;
+	width: 98%;
+	max-width: 400px;
+	border-radius: 16px 0px 0px 16px;
+	box-shadow: -1.5px 0px 1px 0px rgba(0,0,0,0.1), 0px -1.5px 1px 0px rgba(0,0,0,0.1), 0px 1.5px 1px 0px rgba(0,0,0,0.1);
+	transition: .3s;
+}
+
+.nav-destiny-layout.border{
+	border-radius: 16px;
+}
+
+.choose-country-laytout{
+	transform: translateX(-410px) translateY(125px);
+	position: absolute;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.spot-name{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	align-items: center;
+}
+
+.nav-destiny-layout p{
+	all: unset;
+	font-size: 16px;
+	color: rgba(189, 189, 189, 1);
+	transition: .2s;
+}
+
+.nav-destiny-layout p:hover{
+	color: rgba(51, 51, 51, 1);
+	transition: .2s;
+}
+
+.nav-guests-layout{
+	background: white;
+	padding: 7.5px 10.5px;
+	cursor: pointer;
+	width: 98%;
+	max-width: 350px;
+	box-shadow: 0px -1.5px 1px 0px rgba(0,0,0,0.1), 0px 1.5px 1px 0px rgba(0,0,0,0.1);
+}
+
+.nav-guests-layout.border{
+	border-radius: 16px;
+}
+
+.nav-guests-layout p{
+	all: unset;
+	font-size: 16px;
+	color: rgba(189, 189, 189, 1);
+	transition: .2s;
+}
+
+.nav-guests-layout p:hover{
+	color: rgba(51, 51, 51, 1);
+	transition: .2s;
+}
+
+.nav-glass-layout{
+	width: 100%;
+	max-width: 100px;
+	padding: .5px 50px 0px 50px;
+	display: flex;
+	background: white;
+	border-radius: 0px 16px 16px 0px;
+	box-shadow: 0px -1.5px 1px 0px rgba(0,0,0,0.1), 1.5px 0px 1px 0px rgba(0,0,0,.1), 0px 1.5px 1px 0px rgba(0,0,0,0.1);
+}
+
+.search-glass{
+	display: flex;
+	align-items: center;
+}
+
+.search-glass p{
+	all: unset;
+	color: white;
+}
+
+.cancel{
+	margin-left: 2.5px;
+	max-width: 25px;
+	width: 100%;
+}
+
+.glass-nav{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 100%;
+	max-width: 100px;
+	background: rgba(235, 87, 87, 1);
+	border-radius: 16px;
+	padding: 10.5px 0px;
+	cursor: pointer;
+}
+
+.row-main{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.windbnb-0{
+	display: flex;
+	flex-flow: column wrap;
+	width: 100%;
+	max-width: 350px;
+	flex: 1 1 auto;
+}
+
+.apartment-description{
+	margin-top: 10px;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.superhost{
+	padding: 0px 5px;
+	color: rgba(79, 79, 79, 1);
+	font-size: 13px;
+	border: 1px solid rgba(79, 79, 79, 1);
+	border-radius: 12px;
+	font-weight: 700;
+}
+
+.specifications{
+	color: rgba(130, 130, 130, 1);
+	font-size: 13px;
+}
+
+.validation{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: rgba(79, 79, 79, 1);
+	font-size: 13px;
+}
+
+.star-img{
+	width: 100%;
+	max-width: 20px;
+}
+
+.star-img img{
+	width: 100%;
+}
+
+.footer-apartment{
+	color: rgba(51, 51, 51, 1);
+	font-weight: 600;
+	font-size: 13px;
+	margin-bottom: 40px;
+}
+
+/* IMG */
+
+.brand-img{
+	width: 100%;
+	max-width: 20px;
+}
+
+.brand-img img{
+	width: 100%;
+	cursor: pointer;
+}
+
+.nav-glass img{
+	width: 100%;
+	cursor: pointer;
+}
+
+.nav-glass-layout-img{
+	width: 100%;
+	border-radius: 1px;
+	max-width: 30px;
+}
+
+.nav-glass-layout-img img{
+	width: 100%;
+	cursor: pointer;
+}
+
+.apartment-img{
+	width: 100%;
+	max-width: 350px;
+}
+
+.apartment-img img{
+	width: 100%;
+	border-radius: 24px;
+	cursor: pointer;
+}
+
+.cancel img{
+	cursor: pointer;
+	width: 100%;
+	transition: .3s;
+}
+
+.cancel img:hover{
+	transform: rotate(45deg);
+	transition: .3s;
+}
+
+.spot{
+	width: 100%;
+	max-width: 18px;
+	margin-right: 10px;
+}
+
+.spot img{
+	width: 100%;
+}
+
+/* MEDIA */
+
+@media(max-width:1012px){
+	.nav-destiny-layout.open, .nav-guests-layout.open{
+		width: 28.5%;
+	}
+	.nav-glass-layout{
+		padding: .5px 50px 0px 50px;
+	}
+}
+
+@media(max-width:732px){
+	.row-main{
+		flex-flow: row wrap;
+		place-content: center;
+	}
+}
+
+@media(max-width:630px){
+	.nav-destiny-layout.open, .nav-guests-layout.open{
+		width: 28.5%;
+	}
+	.nav-glass-layout{
+		padding: .5px 0px 0px 0px;
+	}
+}
+
+@media(max-width:438px){
+	.bar{
+		margin-top: 50px;
+	}
+	.search-nav{
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+}
+
+@media(max-width:400px){
+	.nav-destiny-layout.open, .nav-guests-layout.open{
+		width: 18%;
+		padding: 10px 5px;
+	}
+	.nav-glass-layout{
+		padding: 12px 0px;
+	}
+}
+
