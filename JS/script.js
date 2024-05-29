@@ -57,3 +57,32 @@ $(function(){
 	});
 });
 
+const botonSumar = document.getElementById('sumar');
+const botonRestar = document.getElementById('restar');
+const contador = document.getElementById('contador');
+let valorContador = 0;
+botonSumar.addEventListener('click', function() {
+	valorContador++;
+	contador.innerText = valorContador;
+});
+botonRestar.addEventListener('click', function() {
+	if (valorContador > 0) {
+		valorContador--;
+		contador.innerText = valorContador;
+	}
+});
+
+const botonSumar1 = document.getElementById('sumar1');
+const botonRestar1 = document.getElementById('restar1');
+const contador1 = document.getElementById('contador1');
+let valorContador1 = 0;
+botonSumar1.addEventListener('click', function() {
+	valorContador1++;
+	contador1.innerText = valorContador1;
+});
+botonRestar1.addEventListener('click', function() {
+	if (valorContador1 > 0) {
+		valorContador1--;
+		contador1.innerText = valorContador1;
+	}
+});
